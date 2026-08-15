@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BarberWalter — Barbería Clásica de Corte Moderno</title>
+<meta name="description" content="BarberWalter. Cortes clásicos, barba a navaja y estilo moderno. Reserva tu cita por WhatsApp.">
+
+<!-- Google Fonts: Bebas Neue (display, estilo cartel de barbería) + Poppins (texto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ BARRA DE NAVEGACIÓN ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#inicio" class="navbar__logo">Barber<span>Walter</span></a>
+
+    <nav class="navbar__nav" id="navMenu">
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <a href="https://wa.me/51999999999?text=Hola%20BarberWalter%2C%20quiero%20reservar%20una%20cita"
+       target="_blank" rel="noopener" class="navbar__cta">Reservar</a>
+
+    <button class="navbar__burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO / INICIO ============ -->
+<section id="inicio" class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__pole" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">Barbería &amp; Grooming — Lima, Perú</p>
+    <h1 class="hero__title">ESTILO CLÁSICO,<br>ACTITUD MODERNA</h1>
+    <p class="hero__subtitle">Cortes de precisión, barba a navaja y una experiencia de barbería como ya no se ve.</p>
+
+    <a href="https://wa.me/51999999999?text=Hola%20BarberWalter%2C%20quiero%20reservar%20una%20cita"
+       target="_blank" rel="noopener" class="btn btn--gold hero__btn">
+       <svg viewBox="0 0 24 24" class="btn__icon" aria-hidden="true"><path d="M17.6 6.3A8.9 8.9 0 0 0 12 4a8.96 8.96 0 0 0-7.7 13.5L3 21l3.6-1.2A8.96 8.96 0 0 0 12 21a8.9 8.9 0 0 0 5.6-2.3A8.9 8.9 0 0 0 20.9 12 8.9 8.9 0 0 0 17.6 6.3zm-5.6 13a7.4 7.4 0 0 1-3.8-1l-.3-.2-2.3.8.8-2.2-.2-.3A7.5 7.5 0 1 1 19.5 12 7.5 7.5 0 0 1 12 19.3zm4.1-5.6c-.2-.1-1.3-.7-1.5-.7s-.4-.1-.5.1-.6.7-.7.9-.3.2-.5.1a6.1 6.1 0 0 1-1.8-1.1 6.7 6.7 0 0 1-1.2-1.5c-.1-.2 0-.4.1-.5l.4-.4a1.6 1.6 0 0 0 .3-.4.5.5 0 0 0 0-.4c-.1-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.6 11.4 11.4 0 0 0 4.4 3.9c1.5.6 1.5.4 1.8.4a1.6 1.6 0 0 0 1.1-.8 1.4 1.4 0 0 0 .1-.8c-.1-.1-.2-.2-.4-.3z"/></svg>
+       Reservar Cita por WhatsApp
+    </a>
+  </div>
+
+  <a href="#servicios" class="hero__scroll" aria-label="Ir a servicios">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ SERVICIOS Y PRECIOS ============ -->
+<section id="servicios" class="services">
+  <div class="section-head">
+    <p class="section-eyebrow">La carta</p>
+    <h2 class="section-title">Servicios &amp; Precios</h2>
+    <p class="section-desc">Precios en soles (S/). Todos los servicios incluyen toalla caliente y acabado con productos premium.</p>
+  </div>
+
+  <div class="services__grid">
+
+    <!-- Columna: Cortes -->
+    <div class="menu-card">
+      <h3 class="menu-card__title">Cortes de Cabello</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <span class="menu-item__name">Corte Clásico</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 25</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Corte + Diseño / Fade</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 35</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Corte Niño (hasta 12 años)</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 20</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Corte + Lavado</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 30</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Columna: Barba -->
+    <div class="menu-card">
+      <h3 class="menu-card__title">Barba &amp; Afeitado</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <span class="menu-item__name">Arreglo de Barba</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 20</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Afeitado Clásico a Navaja</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 25</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Perfilado de Cejas</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 10</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Mascarilla Facial</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 15</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Columna: Paquetes (destacada) -->
+    <div class="menu-card menu-card--featured">
+      <span class="menu-card__badge">Más pedido</span>
+      <h3 class="menu-card__title">Paquetes</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <span class="menu-item__name">Corte + Barba</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 40</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Corte + Barba + Cejas</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 48</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Paquete Premium Completo</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 55</span>
+        </li>
+        <li class="menu-item">
+          <span class="menu-item__name">Membresía Mensual (4 cortes)</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">S/ 90</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section id="galeria" class="gallery">
+  <div class="section-head">
+    <p class="section-eyebrow">Trabajo &amp; local</p>
+    <h2 class="section-title">Galería</h2>
+    <p class="section-desc">
+      Reemplaza cada imagen con tus propias fotos: solo cambia el atributo <code>src</code>
+      de cada <code>&lt;img&gt;</code> en <code>index.html</code> por la ruta de tu foto
+      (por ejemplo <code>img/corte-1.jpg</code>).
+    </p>
+  </div>
+
+  <div class="gallery__grid">
+    <figure class="gallery__item gallery__item--tall">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop" alt="Corte fade clásico realizado en BarberWalter" loading="lazy">
+      <figcaption>Fade Clásico</figcaption>
+    </figure>
+    <figure class="gallery__item">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=800&auto=format&fit=crop" alt="Interior del local BarberWalter" loading="lazy">
+      <figcaption>Nuestro Local</figcaption>
+    </figure>
+    <figure class="gallery__item">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop" alt="Arreglo de barba a navaja" loading="lazy">
+      <figcaption>Barba a Navaja</figcaption>
+    </figure>
+    <figure class="gallery__item">
+      <img src="https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=800&auto=format&fit=crop" alt="Silla de barbero vintage" loading="lazy">
+      <figcaption>Sillón Vintage</figcaption>
+    </figure>
+    <figure class="gallery__item gallery__item--tall">
+      <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=800&auto=format&fit=crop" alt="Corte de diseño geométrico" loading="lazy">
+      <figcaption>Diseño a Detalle</figcaption>
+    </figure>
+    <figure class="gallery__item">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=800&auto=format&fit=crop" alt="Herramientas de barbería" loading="lazy">
+      <figcaption>Herramientas</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CONTACTO / FOOTER ============ -->
+<footer id="contacto" class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__logo">Barber<span>Walter</span></p>
+      <p class="footer__text">Av. Ejemplo 123, Lima, Perú</p>
+      <p class="footer__text">Lun – Sáb: 9:00 am – 8:00 pm</p>
+    </div>
+
+    <div class="footer__cta">
+      <p class="footer__text">¿Listo para tu próximo corte?</p>
+      <a href="https://wa.me/51999999999?text=Hola%20BarberWalter%2C%20quiero%20reservar%20una%20cita"
+         target="_blank" rel="noopener" class="btn btn--outline">Escríbenos al WhatsApp</a>
+    </div>
+  </div>
+  <p class="footer__copy">© <span id="year"></span> BarberWalter. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/51999999999?text=Hola%20BarberWalter%2C%20quiero%20reservar%20una%20cita"
+   target="_blank" rel="noopener" class="whatsapp-float" aria-label="Reservar por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 6.3A8.9 8.9 0 0 0 12 4a8.96 8.96 0 0 0-7.7 13.5L3 21l3.6-1.2A8.96 8.96 0 0 0 12 21a8.9 8.9 0 0 0 5.6-2.3A8.9 8.9 0 0 0 20.9 12 8.9 8.9 0 0 0 17.6 6.3zm-5.6 13a7.4 7.4 0 0 1-3.8-1l-.3-.2-2.3.8.8-2.2-.2-.3A7.5 7.5 0 1 1 19.5 12 7.5 7.5 0 0 1 12 19.3zm4.1-5.6c-.2-.1-1.3-.7-1.5-.7s-.4-.1-.5.1-.6.7-.7.9-.3.2-.5.1a6.1 6.1 0 0 1-1.8-1.1 6.7 6.7 0 0 1-1.2-1.5c-.1-.2 0-.4.1-.5l.4-.4a1.6 1.6 0 0 0 .3-.4.5.5 0 0 0 0-.4c-.1-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.6 11.4 11.4 0 0 0 4.4 3.9c1.5.6 1.5.4 1.8.4a1.6 1.6 0 0 0 1.1-.8 1.4 1.4 0 0 0 .1-.8c-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
